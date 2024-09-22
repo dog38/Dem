@@ -1,0 +1,89 @@
+//Function KillerMailer
+<RANDOMFULLNAME>      // To Show Random Full Name
+<RANDOMFIRSTNAME>	  // To Show Random First Name
+<RANDOMLASTNAME>	  // To Show Random Last Name
+<EMAILFULLNAME>	      // To Show Email Full Name
+<EMAILFIRSTNAME>      // To Show Email First Name
+<EMAILLASTNAME>       // To Show Email Last Name
+<EMAILUSERNAME>       // To Show Email Username
+<EMAILCITY>           // To Show Email User City Location
+<EMAILSTATE>          // To Show Email User State Location
+<EMAILCOUNTRY>        // To Show Email User Country Location
+<EMAILCOUNTRYCODE>    // To Show Email User Country Code
+<EMAILLOCATION>       // To Show Email User Location Details
+<EMAILJOB>            // To Show Email User Job Title
+<EMAILTIMEZONE>       // To Show Email User Real Time Location
+<EMAILUTC>            // To Show Email User Timezone
+<DOMAINEMAILNAME>     // To Show Email Company Name
+<DOMAINEMAILFULL>     // To Show Email Company Domain 
+<DOMAINEMAILINFO>     // To Show Email Company Business Information
+<DOMAINEMAILINDUSTRY> // To Show Email Company Industry Details
+<DOMAINEMAILSECTORS>  // To Show Email Company Sectors Information
+<DOMAINEMAILADDRESS>  // To Show Email Company Address
+<DOMAINEMAILTIMEZONE> // To Show Email Company Timezone
+<DOMAINEMAILUTC>      // To Show Email Company Utc
+<DOMAINEMAILNUMBER>   // To Show Email Company Phone Number 
+<QR>				  // To Call Generated QR code
+<HTMLTOIMG>			  // To Call Html to Image function
+<IMGTOHTML>			  // To Call Image Function to Letter
+<LINK64>			  // To Call Link That Has been Encrypted by Base64
+<EMAIL>               // To Show Their Email
+<EMAIL64>             // To Show Their Email Encrypted with Base64
+<SUBJECT>             // To Show Subject
+<FROMMAIL>            // To Show From Mail
+<FROMNAME>            // To Show From Name
+<RANDOMIP>            // To Random IP
+<USERNAME>            // To Show The Email Username
+<NAME>                // To Show Name
+<EMAILCENSORED>       // To Show Email Censored
+<DOMAINEMAIL>         // To Show The Domain Without Extention
+<DOMAINFULL>          // To Show The Domain
+<LINK>            	  // To Make a Shortcut for Your Link
+<GREDIRECT>			  // To Use Google Redirect
+<randstring>          // To Show Random String in Lowercase
+<RANDSTRING>          // Tp Show Random String in Uppercase
+<COUNTRY>             // To Show Random Country
+<DATE>            	  // To Show Date
+<DATETOMORROW>		  // To Show Date Tomorrow
+<TIME>				  // To Show Time
+<NUMBER1>       	  // To Randomize Number as Many as 1 Piece
+<NUMBER2>       	  // To Randomize Number as Many as 2 Piece
+<NUMBER3>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER4>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER5>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER6>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER7>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER8>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER9>       	  // To Randomize Number as Many as 3 Piece
+<NUMBER10>      	  // To Randomize Number as Many as 3 Piece
+<char1>         	  // To Randomize Char in Lowercase as Many as 1 Piece
+<char2>         	  // To Randomize Char in Lowercase as Many as 2 Piece
+<char3>         	  // To Randomize Char in Lowercase as Many as 3 Piece
+<char4>           	  // To Randomize Char in Lowercase as Many as 4 Piece
+<char5>           	  // To Randomize Char in Lowercase as Many as 5 Piece
+<char6>           	  // To Randomize Char in Lowercase as Many as 6 Piece
+<char7>           	  // To Randomize Char in Lowercase as Many as 7 Piece
+<char8>           	  // To Randomize Char in Lowercase as Many as 8 Piece
+<char9>           	  // To Randomize Char in Lowercase as Many as 9 Piece
+<char10>          	  // To Randomize Char in Lowercase as Many as 10 Piece
+<CHAR1>           	  // To Randomize Char in Uowercase as Many as 1 Piece
+<CHAR2>           	  // To Randomize Char in Uowercase as Many as 2 Piece
+<CHAR3>           	  // To Randomize Char in Uowercase as Many as 3 Piece
+<CHAR4>           	  // To Randomize Char in Uowercase as Many as 4 Piece
+<CHAR5>           	  // To Randomize Char in Uowercase as Many as 5 Piece
+<CHAR6>           	  // To Randomize Char in Uowercase as Many as 6 Piece
+<CHAR7>           	  // To Randomize Char in Uowercase as Many as 7 Piece
+<CHAR8>               // To Randomize Char in Uowercase as Many as 8 Piece
+<CHAR9>               // To Randomize Char in Uowercase as Many as 9 Piece
+<CHAR10>              // To Randomize Char in Uowercase as Many as 10 Piece
+<PC_OS>               // To Show Random PC OS
+<PC_Browser>          // To Show Random PC Browsers
+<COUNTRYCITY>         // To Show Random Country and City
+<ANDROID_OS>          // To Show Random Android OS
+<ANDROID_Browser>     // To Show Random Android Browsers
+<UA>              	  // To Show Random User Agents
+<APPLEAPPS>           // To Show Random Apple Apps
+<APPLEPC>             // To Show Random Apple Laptops
+<APPLEPHONES>         // To Show Random Apple Phones
+<UNIVERSAL_Browser>   // To Show Random Universal Broswers
+ 
